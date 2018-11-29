@@ -15,12 +15,13 @@
 /*background-color #eee*/
 }
 #help-wrap .help-content .left-nav {
-  background: #fff;
   margin-top: 3%;
-  background-clip: content-box;
+/*background #fff
+      background-clip content-box*/
 }
 #help-wrap .help-content .left-nav .directory {
   padding: 10px 10px;
+  background: #fff;
 }
 #help-wrap .help-content .left-nav .directory .title {
   font-size: 20px;
@@ -44,11 +45,12 @@
 }
 #help-wrap .help-content .right-content {
   margin: 3% 0;
-  background: #fff;
-  background-clip: content-box;
+/*background #fff
+      background-clip content-box*/
 }
 #help-wrap .help-content .right-content .content-list {
   padding: 20px 20px;
+  background: #fff;
 }
 #help-wrap .help-content .right-content .content-list .content-item {
   margin-bottom: 20px;
@@ -57,12 +59,14 @@
   margin-bottom: 0;
 }
 #help-wrap .help-content .right-content .content-list .content-item .ask {
-  display: flex;
-  justify-content: space-between;
+/*display flex
+            justify-content space-between*/
+  overflow: hidden;
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
 #help-wrap .help-content .right-content .content-list .content-item .ask .icon {
+  float: right;
   transition: all 0.5s;
 }
 #help-wrap .help-content .right-content .content-list .content-item .ask .icon.close {

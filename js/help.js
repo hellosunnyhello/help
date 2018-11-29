@@ -7,7 +7,7 @@ $(function () {
     $('#help-wrap .right-content .content-list').eq(currentIndex).css('display','block').siblings().css('display','none');
   }
   function showNavItem() {
-    const navItem = $('#help-wrap .left-nav .directory .nav-list .nav-item');
+    var navItem = $('#help-wrap .left-nav .directory .nav-list .nav-item');
     navItem.click(function (e) {
       $(this).addClass('active').siblings().removeClass('active');
       currentIndex = $(this).index();
@@ -17,7 +17,7 @@ $(function () {
   }
   function showAnswer() {
     var askList = $('#help-wrap .right-content .content-list .content-item .ask')
-    for(let i=0;i<askList.length;i++){
+    for(var i=0;i<askList.length;i++){
       askList[i].isShowAnswer = true;
       askList[i].onclick = function (e) {
         this.isShowAnswer = !this.isShowAnswer
