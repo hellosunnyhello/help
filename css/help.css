@@ -1,0 +1,85 @@
+@import "reset.css";
+@media screen and (min-width: 992px) {
+  #help-wrap .help-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #help-wrap .help-content {
+    width: 100%;
+  }
+}
+#help-wrap {
+  width: 100%;
+  font-size: 14px;
+/*background-color #eee*/
+}
+#help-wrap .help-content .left-nav {
+  background: #fff;
+  margin-top: 3%;
+  background-clip: content-box;
+}
+#help-wrap .help-content .left-nav .directory {
+  padding: 10px 10px;
+}
+#help-wrap .help-content .left-nav .directory .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#help-wrap .help-content .left-nav .directory .nav-list .nav-item {
+  margin-bottom: 10px;
+}
+#help-wrap .help-content .left-nav .directory .nav-list .nav-item.active {
+  color: #6481c5;
+}
+#help-wrap .help-content .left-nav .directory .nav-list .nav-item:last-child {
+  margin-bottom: 0;
+}
+#help-wrap .help-content .left-nav .directory .nav-list .nav-item>img {
+  width: 25px;
+  vertical-align: middle;
+}
+#help-wrap .help-content .left-nav .directory .nav-list .nav-item>span {
+  margin-left: 20px;
+}
+#help-wrap .help-content .right-content {
+  margin: 3% 0;
+  background: #fff;
+  background-clip: content-box;
+}
+#help-wrap .help-content .right-content .content-list {
+  padding: 20px 20px;
+}
+#help-wrap .help-content .right-content .content-list .content-item {
+  margin-bottom: 20px;
+}
+#help-wrap .help-content .right-content .content-list .content-item:last-child {
+  margin-bottom: 0;
+}
+#help-wrap .help-content .right-content .content-list .content-item .ask {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+#help-wrap .help-content .right-content .content-list .content-item .ask .icon {
+  transition: all 0.5s;
+}
+#help-wrap .help-content .right-content .content-list .content-item .ask .icon.close {
+  transform: rotate(90deg);
+}
+#help-wrap .help-content .right-content .content-list .content-item .answer >p {
+  padding: 10px 0;
+  color: #666;
+}
+#help-wrap .help-content .right-content .content-list .content-item .answer .hasImg {
+  width: 60%;
+  margin: 0 auto;
+}
+#help-wrap .help-content .right-content .content-list .content-item .answer .hasImg .img-content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#help-wrap .help-content .right-content .content-list .content-item .answer .hasImg .img-content:last-child {
+  margin-bottom: 0;
+}
